@@ -1,0 +1,32 @@
+.place {
+    display: grid;
+    grid-template-areas:
+    "section-title place__website"
+    "place__image place__description";
+    grid-template-columns: 1fr 50%;
+    gap: 48px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .place {
+        column-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place {
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .place {
+        grid-template-areas:
+        "section-title"
+        "place__website"
+        "place__image"
+        "place__description";
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+}
