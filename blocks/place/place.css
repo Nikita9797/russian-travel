@@ -4,12 +4,12 @@
     "section-title place__website"
     "place__image place__description";
     grid-template-columns: 1fr 50%;
-    gap: 48px 40px;
+    gap: 48px 33px;
 }
 
 @media screen and (max-width: 1024px) {
     .place {
-        column-gap: 32px;
+        column-gap: 25px;
     }
 }
 
